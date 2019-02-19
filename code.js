@@ -1,11 +1,10 @@
 var names=["dog","cat","dragon"];
-var list=document.createElement("OL");
 
 names.forEach(function(d)
 {
-  var li=document.createElement("LI");
+  var list=document.createElement("ul");
+  var li=document.createElement("li");
   li.innerText=d;
   list.appendChild(li);
+  document.body.appendChild(list);
 })
-var body=document.getElementById("l");
-body.innerHTML=list;
