@@ -1,11 +1,12 @@
-var change=function(){
+var change = function() {
 
-var a=document.getElementById("dog")
-a.innerText="Big dog"
-var b=document.getElementById("cat")
-b.innerText="Big cat"
-var c=document.getElementById("dragon")
-c.innerText="Big dragon"
+  var a = document.getElementsByTagName('li')
+  let b = Array.from(a)
+  b.forEach(function(d,index) {
+    b[index]=b[index].outerText;
+    a[index].innerHTML="big "+b[index]
 
+
+  })
 
 }
